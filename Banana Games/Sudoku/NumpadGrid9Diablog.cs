@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Banana_Games
+namespace Banana_Games.Sudoku
 {
-    public partial class Sudoku : Form
+    public partial class NumpadGrid9Diablog : Form
     {
-        public Sudoku()
+        public NumpadGrid9Diablog()
         {
             InitializeComponent();
         }
