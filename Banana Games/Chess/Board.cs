@@ -7,8 +7,7 @@ using System.Drawing;
 using System.Threading;
 using System.Collections;
 using System.Net.NetworkInformation;
-using Banana_Games.Chess.Piece;
-using Banana_Games.Chess.lib;
+
 
 namespace Banana_Games.Chess
 {
@@ -247,7 +246,7 @@ namespace Banana_Games.Chess
             if (Turn == Player.Black)
             {
                 Thread.Sleep(500);
-                if (this._firstThreeMoves < 2)
+                if (this._firstThreeMoves < 200)
                 {
                     ai.EvaluateRandom(this);
                     this._firstThreeMoves += 1;

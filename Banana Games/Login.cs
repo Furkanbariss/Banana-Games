@@ -39,7 +39,7 @@
 
         private void chessButton_Click(object sender, EventArgs e)
         {
-            Chess chessFormOpen = new Chess();
+            Chess.Chess chessFormOpen = new Chess.Chess();
             chessFormOpen.ShowDialog();
         }
 

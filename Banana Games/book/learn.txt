@@ -1,0 +1,112 @@
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+White   11   27
+Black   48   40
+White   27   35
+Black   52   44
+White   35   44
+New Game
+
+White   12   28
+Black   53   37
+White   28   37
+Black   50   34
+White   10   26
+New Game
+
+White   11   27
+Black   57   40
+White   12   28
+Black   54   46
+White   10   26
+New Game
+
+White   11   27
+Black   54   46
+White   12   28
+Black   57   42
+White   15   23
+New Game
+
+White   15   31
+Black   52   36
+White   07   23
+Black   59   38
+White   23   21
+New Game
+
+White   12   28
+Black   52   36
+White   11   27
+Black   49   33
+New Game
+
+White   08   24
+Black   49   41
+White   00   16
+Black   57   40
+White   16   22
+New Game
+
+White   11   27
+Black   55   39
+White   06   21
+Black   39   31
+White   21   31
+New Game
+
+White   12   28
+Black   52   44
+White   06   21
+Black   57   42
+White   11   27
+New Game
+
+White   11   19
+Black   49   33
+White   06   21
+Black   54   38
+White   12   28
+Black   62   47
+White   14   30
+Black   48   40
+White   15   31
+Black   56   48
+White   21   38
+Black   63   62
+White   38   55
+Black   62   63
+White   55   61
+Black   51   35
+White   61   44
+Black   58   44
+White   28   35
+Black   44   30
+White   03   30
+Black   63   62
+White   30   62
+Black   47   62
+White   05   23
+Black   59   43
+White   02   29
+Black   43   35
+White   29   50
+Black   33   25
+White   50   41
+Black   48   49
+White   41   20
+Black   35   59
