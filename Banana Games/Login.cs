@@ -20,7 +20,7 @@
 
         private void button7_Click(object sender, EventArgs e)  //sudoku button
         {
-            Sudoku sudokuFormOpen = new Sudoku();
+            Sudoku.SudokuForm sudokuFormOpen = new Sudoku.SudokuForm();
             sudokuFormOpen.ShowDialog();
         }
 
