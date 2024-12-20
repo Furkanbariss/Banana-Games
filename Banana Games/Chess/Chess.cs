@@ -28,7 +28,7 @@ namespace Banana_Games.Chess
             board.SaveStatus --> book.cs dosyasında ne yapıldığını yazdım.
             */
             updateUI(); //Oyun ekranını günceller ve hangi oyuncunun sırası olduğunu gösterir.
-
+            
         }
 
         // oyun bilgisinin güncellenmesini sağlar.
@@ -131,7 +131,7 @@ namespace Banana_Games.Chess
             Brush brush;
             if ((x + y) % 2 == 0)
             {
-                brush = Brushes.White;
+                brush = Brushes.AntiqueWhite;
                 if (SelectedPiece != null && SelectedPiece._position.x == x && SelectedPiece._position.y == y - 1)
                 {
                     brush = Brushes.Yellow;
@@ -143,7 +143,7 @@ namespace Banana_Games.Chess
             }
             else
             {
-                brush = Brushes.Green;
+                brush = Brushes.Sienna;
             }
 
             if (SelectedPiece != null)
@@ -155,7 +155,7 @@ namespace Banana_Games.Chess
                     int n = move - m * 8;
                     if (m == y - 1 && n == x)
                     {
-                        brush = Brushes.Red;
+                        brush = Brushes.Green;
                     }
                 }
             }

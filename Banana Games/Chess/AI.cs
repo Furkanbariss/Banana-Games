@@ -132,27 +132,27 @@ namespace Banana_Games.Chess
                 {
                     if (board.Pieces[i].GetType() == typeof(Piece.Pawn) && board.Pieces[i].Player == player)
                     {
-                        material += (pawnValue + bestPawnPositions[i]); // plus "+ bestPawnPositions[i]" if you want, but it doesn't work well
+                        material += (pawnValue + bestPawnPositions[i]); 
                     }
                     if (board.Pieces[i].GetType() == typeof(Piece.Knight) && board.Pieces[i].Player == player)
                     {
-                        material += (knightValue); // plus "+ bestKnightPositions[i]" if you want, but it doesn't work well
+                        material += (knightValue); 
                     }
                     if (board.Pieces[i].GetType() == typeof(Piece.Bishop) && board.Pieces[i].Player == player)
                     {
-                        material += (bishopValue); // plus "+ bestBishopPositions[i]" if you want, but it doesn't work well
+                        material += (bishopValue); 
                     }
                     if (board.Pieces[i].GetType() == typeof(Piece.Rook) && board.Pieces[i].Player == player)
                     {
-                        material += (rookValue); // plus "+ bestRookPositions[i]" if you want, but it doesn't work well
+                        material += (rookValue); 
                     }
                     if (board.Pieces[i].GetType() == typeof(Piece.Queen) && board.Pieces[i].Player == player)
                     {
-                        material += (queenValue); // plus "+ bestQueenPositions[i]" if you want, but it doesn't work well
+                        material += (queenValue); 
                     }
                     if (board.Pieces[i].GetType() == typeof(Piece.King) && board.Pieces[i].Player == player)
                     {
-                        material += (kingValue); // plus "+ bestKingPositions[i]" if you want, but it doesn't work well
+                        material += (kingValue); 
                     }
                 }
             }
@@ -163,12 +163,10 @@ namespace Banana_Games.Chess
 
         //+++++++++++++++++++++++++++++++++++++ NEGAMAX ALGORITHM ++++++++++++++++++++++++++++++++++++
 
-        /// <summary>
-        /// Main algorithm: Negamax
-        /// </summary>
-        /// <param name="board"></param>
-        /// <param name="plies"></param>
-        /// <returns></returns>
+        
+        // Main algorithm: Negamax
+        
+        
         public MoveWithScore CalculateBestMove(Board board, int depth)
         {
             if (depth == 0)
@@ -204,14 +202,12 @@ namespace Banana_Games.Chess
         /// <summary>
         /// Copy the current board, then make move
         /// </summary>
-        /// <param name="oldBoard"></param>
-        /// <param name="move"></param>
-        /// <returns></returns>
+        
         private Board GenerateMovedBoard(Board oldBoard, Move move)
         {
             Board newBoard = new Board();
             newBoard = ObjectExtensions.Copy(oldBoard);
-            Board.MovePiece(newBoard, move.StartTile, move. EndTile);
+            Board.MovePiece(newBoard, move.StartTile, move.EndTile);
             return newBoard;
         }
         // if not using the lib from Stack Overflow, the code will look like below, and maybe something is missing

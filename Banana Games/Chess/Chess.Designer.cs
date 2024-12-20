@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chess));
             panel145 = new Panel();
             label145 = new Label();
             label146 = new Label();
@@ -41,19 +42,21 @@
             // 
             // panel145
             // 
+            panel145.Cursor = Cursors.Hand;
             panel145.Location = new Point(200, 55);
             panel145.Name = "panel145";
             panel145.Size = new Size(565, 584);
             panel145.TabIndex = 0;
             panel145.Paint += panel1_Paint;
-            panel145.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Chess_MouseClick);
+            panel145.MouseClick += Chess_MouseClick;
             // 
             // label145
             // 
             label145.AutoSize = true;
+            label145.Font = new Font("Arial Nova", 9F, FontStyle.Italic);
             label145.Location = new Point(12, 66);
             label145.Name = "label145";
-            label145.Size = new Size(85, 20);
+            label145.Size = new Size(85, 18);
             label145.TabIndex = 1;
             label145.Text = "Player Turn:";
             label145.Click += label1_Click;
@@ -61,18 +64,20 @@
             // label146
             // 
             label146.AutoSize = true;
+            label146.Font = new Font("Arial Nova", 9F, FontStyle.Italic);
             label146.Location = new Point(12, 111);
             label146.Name = "label146";
-            label146.Size = new Size(108, 20);
+            label146.Size = new Size(110, 18);
             label146.TabIndex = 2;
             label146.Text = "Piece Selected:";
             // 
             // label147
             // 
             label147.AutoSize = true;
+            label147.Font = new Font("Arial Nova", 9F, FontStyle.Italic);
             label147.Location = new Point(792, 66);
             label147.Name = "label147";
-            label147.Size = new Size(25, 20);
+            label147.Size = new Size(26, 18);
             label147.TabIndex = 3;
             label147.Text = "X :";
             label147.Click += label1_Click_1;
@@ -80,45 +85,50 @@
             // label148
             // 
             label148.AutoSize = true;
+            label148.Font = new Font("Arial Nova", 9F, FontStyle.Italic);
             label148.Location = new Point(792, 111);
             label148.Name = "label148";
-            label148.Size = new Size(24, 20);
+            label148.Size = new Size(26, 18);
             label148.TabIndex = 4;
             label148.Text = "Y :";
             // 
             // playerTurn
             // 
             playerTurn.AutoSize = true;
+            playerTurn.Font = new Font("Arial Nova", 9F, FontStyle.Italic);
             playerTurn.Location = new Point(103, 66);
             playerTurn.Name = "playerTurn";
-            playerTurn.Size = new Size(33, 20);
+            playerTurn.Size = new Size(30, 18);
             playerTurn.TabIndex = 5;
             playerTurn.Text = "null";
             // 
             // pieceselect
             // 
             pieceselect.AutoSize = true;
+            pieceselect.Font = new Font("Arial Nova", 9F, FontStyle.Italic);
             pieceselect.Location = new Point(126, 111);
             pieceselect.Name = "pieceselect";
-            pieceselect.Size = new Size(33, 20);
+            pieceselect.Size = new Size(30, 18);
             pieceselect.TabIndex = 6;
             pieceselect.Text = "null";
             // 
             // selectX
             // 
             selectX.AutoSize = true;
+            selectX.Font = new Font("Arial Nova", 9F, FontStyle.Italic);
             selectX.Location = new Point(832, 66);
             selectX.Name = "selectX";
-            selectX.Size = new Size(33, 20);
+            selectX.Size = new Size(30, 18);
             selectX.TabIndex = 7;
             selectX.Text = "null";
             // 
             // selectY
             // 
             selectY.AutoSize = true;
+            selectY.Font = new Font("Arial Nova", 9F, FontStyle.Italic);
             selectY.Location = new Point(832, 111);
             selectY.Name = "selectY";
-            selectY.Size = new Size(33, 20);
+            selectY.Size = new Size(30, 18);
             selectY.TabIndex = 8;
             selectY.Text = "null";
             // 
@@ -136,6 +146,7 @@
             Controls.Add(label146);
             Controls.Add(label145);
             Controls.Add(panel145);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Chess";
             Text = "Chess";
             Load += Chess_Load;

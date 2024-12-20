@@ -110,3 +110,191 @@ White   50   41
 Black   48   49
 White   41   20
 Black   35   59
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+White   11   27
+Black   62   47
+White   06   21
+Black   47   37
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+White   10   26
+Black   49   33
+White   26   33
+Black   57   42
+White   33   42
+Black   48   32
+White   03   24
+Black   51   42
+White   24   42
+Black   58   51
+White   42   56
+Black   53   37
+White   56   32
+Black   60   53
+White   09   25
+Black   50   42
+White   32   59
+Black   62   47
+White   59   51
+Black   54   38
+White   51   42
+Black   53   54
+White   25   33
+Black   37   29
+White   33   41
+Black   54   62
+White   41   49
+Black   52   36
+White   49   57
+Black   47   37
+White   57   50
+Black   37   54
+White   42   45
+Black   54   39
+White   45   53
+
+End Game
+
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+White   12   28
+Black   49   33
+White   05   33
+Black   52   44
+White   03   12
+Black   61   25
+White   33   40
+Black   54   38
+White   40   49
+Black   25   11
+White   12   11
+Black   50   34
+White   49   56
+Black   62   52
+White   56   35
+Black   52   37
+White   35   49
+Black   34   26
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+White   12   28
+Black   55   39
+White   10   26
+Black   49   33
+White   06   21
+Black   63   47
+White   26   33
+Black   50   42
+White   33   42
+Black   59   32
+New Game
+
+White   10   26
+Black   50   34
+White   13   21
+Black   51   35
+White   26   35
+Black   62   45
+White   01   18
+Black   58   51
+White   12   28
+Black   51   58
+White   06   23
+Black   48   40
+White   23   29
+Black   54   46
+White   05   40
+Black   59   51
+White   40   49
+Black   45   35
+White   49   56
+Black   60   59
+White   56   35
+Black   63   62
+White   35   44
+Black   51   42
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+New Game
+
+White   12   28
+Black   55   47
+White   15   31
+Black   47   39
+White   28   36
+Black   49   41
+White   05   33
+Black   48   32
+White   33   51
+Black   60   51
+New Game
+
+New Game
+
+New Game
+
+White   12   28
+Black   50   34
+White   06   21
+Black   53   45
+White   01   18
+Black   52   36
+White   21   36
+Black   62   52
+White   11   27
+Black   49   33
+White   27   34
+Black   59   50
+White   03   35
+Black   60   59
+White   36   53
+Black   59   60
+White   53   63
+Black   58   40
+White   35   53
+Black   60   59
+White   53   61
+
+End Game
+
+New Game
+
