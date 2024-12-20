@@ -1,6 +1,6 @@
 ﻿namespace Banana_Games
 {
-    partial class Chess
+    partial class Chess2
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Chess";
+            this.Text = "Chess2";
         }
 
         #endregion

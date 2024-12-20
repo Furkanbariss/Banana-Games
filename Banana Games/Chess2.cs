@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Banana_Games
 {
-    public partial class Chess : Form
+    public partial class Chess2 : Form
     {
-        public Chess()
+        public Chess2()
         {
             InitializeComponent();
         }
