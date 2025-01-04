@@ -2,7 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Chess.cs">
+    <Compile Update="Chess2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Chess\Chess.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Login.cs">
@@ -14,7 +17,22 @@
     <Compile Update="Rules.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Sudoku.cs">
+    <Compile Update="Sudoku\NumpadGrid4Diablog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Sudoku\NumpadGrid4Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Sudoku\NumpadGrid9Diablog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Sudoku\NumpadGrid9Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Sudoku\Sudoku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Sudoku\SudokuForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="XoxForm.cs">

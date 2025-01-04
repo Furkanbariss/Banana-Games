@@ -43,7 +43,7 @@ namespace Banana_Games
             panel4 = new Panel();
             panel3 = new Panel();
             scoreCom = new Label();
-            scorePlayer = new Label();
+            scoreYou = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
@@ -77,7 +77,6 @@ namespace Banana_Games
             ımageList1.Images.SetKeyName(3, "scissors_541957.png");
             ımageList1.Images.SetKeyName(4, "paper-plane_258977.png");
             ımageList1.Images.SetKeyName(5, "paper-plane_467568.png");
-            ımageList1.Images.SetKeyName(6, "Rules.png");
             // 
             // btnPaper
             // 
@@ -107,7 +106,7 @@ namespace Banana_Games
             // 
             // btnRules
             // 
-            btnRules.Font = new System.Drawing.Font("Arial", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            btnRules.Font = new System.Drawing.Font("Courier New", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
             btnRules.Location = new Point(725, 413);
             btnRules.Name = "btnRules";
             btnRules.Size = new Size(118, 54);
@@ -134,7 +133,7 @@ namespace Banana_Games
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(panel3);
             panel2.Controls.Add(scoreCom);
-            panel2.Controls.Add(scorePlayer);
+            panel2.Controls.Add(scoreYou);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label2);
@@ -169,15 +168,15 @@ namespace Banana_Games
             scoreCom.TabIndex = 4;
             scoreCom.Text = "0";
             // 
-            // scorePlayer
+            // scoreYou
             // 
-            scorePlayer.AutoSize = true;
-            scorePlayer.Font = new System.Drawing.Font("Segoe Print", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            scorePlayer.Location = new Point(65, 72);
-            scorePlayer.Name = "scorePlayer";
-            scorePlayer.Size = new Size(29, 33);
-            scorePlayer.TabIndex = 3;
-            scorePlayer.Text = "0";
+            scoreYou.AutoSize = true;
+            scoreYou.Font = new System.Drawing.Font("Segoe Print", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            scoreYou.Location = new Point(65, 72);
+            scoreYou.Name = "scoreYou";
+            scoreYou.Size = new Size(29, 33);
+            scoreYou.TabIndex = 3;
+            scoreYou.Text = "0";
             // 
             // label4
             // 
@@ -193,31 +192,31 @@ namespace Banana_Games
             // 
             label3.AutoSize = true;
             label3.Font = new System.Drawing.Font("Segoe Print", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label3.Location = new Point(30, 39);
+            label3.Location = new Point(47, 39);
             label3.Name = "label3";
-            label3.Size = new Size(95, 33);
+            label3.Size = new Size(58, 33);
             label3.TabIndex = 1;
-            label3.Text = "PLAYER";
+            label3.Text = "YOU";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label2.Font = new System.Drawing.Font("Segoe Print", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label2.ForeColor = SystemColors.ActiveCaption;
-            label2.Location = new Point(94, 5);
+            label2.Location = new Point(99, -1);
             label2.Name = "label2";
-            label2.Size = new Size(120, 22);
+            label2.Size = new Size(124, 33);
             label2.TabIndex = 0;
             label2.Text = "Scoreboard";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            label1.Font = new System.Drawing.Font("Segoe Print", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(55, 14);
+            label1.Location = new Point(54, -4);
             label1.Name = "label1";
-            label1.Size = new Size(92, 72);
+            label1.Size = new Size(95, 108);
             label1.TabIndex = 0;
             label1.Text = "Rock\r\nPaper\r\nScissors";
             // 
@@ -225,7 +224,7 @@ namespace Banana_Games
             // 
             panelResults.Location = new Point(203, 175);
             panelResults.Name = "panelResults";
-            panelResults.Size = new Size(463, 192);
+            panelResults.Size = new Size(459, 192);
             panelResults.TabIndex = 5;
             // 
             // Rock_Paper_Scissors
@@ -262,7 +261,7 @@ namespace Banana_Games
         private Panel panel2;
         private Label label2;
         private Label scoreCom;
-        private Label scorePlayer;
+        private Label scoreYou;
         private Label label4;
         private Label label3;
         private Panel panel3;

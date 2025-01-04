@@ -23,7 +23,7 @@ namespace Banana_Games
 
         private void Rock_Paper_Scissors_Load(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(34, 58, 95); 
+            this.BackColor = Color.FromArgb(34, 58, 95); // Arka plan rengi
             panelResults.Visible = false;
         }
 
@@ -60,7 +60,7 @@ namespace Banana_Games
             panelResults.Controls.Clear();
             ShowGameResult(playerChoice, computerChoice);
 
-            
+            // Skoru güncelle
             if (playerChoice == computerChoice)
             {
                 ShowResultText("IT'S A DRAW!");
@@ -71,7 +71,7 @@ namespace Banana_Games
             {
                 playerScore++;
                 ShowResultText("YOU WON!");
-                scorePlayer.Text = playerScore.ToString();
+                scoreYou.Text = playerScore.ToString();
             }
             else
             {
@@ -85,7 +85,7 @@ namespace Banana_Games
         {
             panelResults.Visible = true;
 
-            
+            // Oyuncu ve bilgisayar seçim resimleri
             PictureBox playerPicture = new PictureBox
             {
                 Image = GetChoiceImage(playerChoice),
@@ -93,7 +93,7 @@ namespace Banana_Games
                 Width = 100,
                 Height = 100,
                 Location = new Point(0, 50),
-                
+                BackColor = Color.Goldenrod // Çerçeve etkisi
             };
 
             PictureBox computerPicture = new PictureBox
@@ -103,13 +103,13 @@ namespace Banana_Games
                 Width = 100,
                 Height = 100,
                 Location = new Point(panelResults.Width - 100, 50),
-                
+                BackColor = Color.RoyalBlue // Çerçeve etkisi
             };
 
-            
+            // Oyuncu başlıkları
             Label lblPlayer = new Label
             {
-                Text = "PLAYER",
+                Text = "YOU",
                 Font = new Font("Arial", 12, FontStyle.Bold),
                 ForeColor = Color.White,
                 Location = new Point(0, 20),
@@ -119,19 +119,19 @@ namespace Banana_Games
 
             Label lblComputer = new Label
             {
-                Text = "COMPUTER",
-                Font = new Font("Arial", 11, FontStyle.Bold),
+                Text = "OPPONENT",
+                Font = new Font("Arial", 12, FontStyle.Bold),
                 ForeColor = Color.White,
-                Location = new Point(panelResults.Width - 100, 20),
+                Location = new Point(panelResults.Width - 120, 20),
                 Width = 100,
                 TextAlign = ContentAlignment.MiddleCenter
             };
 
-            
+            // "Play Again" butonu
             Button btnPlayAgain = new Button
             {
                 Text = "PLAY AGAIN",
-                BackColor = Color.GhostWhite,
+                BackColor = Color.Orange,
                 ForeColor = Color.Black,
                 Font = new Font("Arial", 12, FontStyle.Bold),
                 Width = 140,
@@ -141,7 +141,7 @@ namespace Banana_Games
             };
             btnPlayAgain.Click += btnPlayAgain_Click;
 
-            
+            // Kontrolleri ekle
             panelResults.Controls.Add(playerPicture);
             panelResults.Controls.Add(computerPicture);
             panelResults.Controls.Add(lblPlayer);
@@ -171,17 +171,12 @@ namespace Banana_Games
                 "Rock" => ımageList1.Images[1],// Taş resmi
                 "Paper" => ımageList1.Images[4], // Kağıt resmi
                 "Scissors" => ımageList1.Images[3], // Makas resmi
-                _ => ımageList1.Images[6]
+                _ => null
             };
         }
 
-        private void btnPlayAgain_Click(object? sender, EventArgs e)
+        private void btnPlayAgain_Click(object sender, EventArgs e)
         {
-            if(sender == null)
-            {
-                return;
-            }
-
             panelResults.Controls.Clear();
             panelResults.Visible = false;
             btnRock.Visible = true;
@@ -193,8 +188,11 @@ namespace Banana_Games
         {
             Rules rules = new Rules();
 
+            // Form2'yi göster
             rules.Show();
 
+            // Eğer yeni form açıldığında mevcut formu gizlemek istiyorsanız:
+            // this.Hide();
         }
     }
 }

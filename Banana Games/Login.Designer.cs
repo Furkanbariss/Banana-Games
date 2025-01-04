@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             button1 = new Button();
             contactButton = new Button();
             exitButton = new Button();
@@ -43,17 +44,26 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.Transparent;
+            button1.Cursor = Cursors.Hand;
+            button1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.Magenta;
             button1.Location = new Point(3, 3);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(82, 22);
+            button1.Size = new Size(85, 22);
             button1.TabIndex = 0;
             button1.Text = "PLAY";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            button1.Enter += button1_Enter;
+            button1.Leave += button1_Leave;
             // 
             // contactButton
             // 
+            contactButton.Cursor = Cursors.Hand;
+            contactButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            contactButton.ForeColor = Color.Fuchsia;
             contactButton.Location = new Point(3, 46);
             contactButton.Margin = new Padding(3, 2, 3, 2);
             contactButton.Name = "contactButton";
@@ -65,6 +75,9 @@
             // 
             // exitButton
             // 
+            exitButton.Cursor = Cursors.No;
+            exitButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            exitButton.ForeColor = Color.Fuchsia;
             exitButton.Location = new Point(3, 91);
             exitButton.Margin = new Padding(3, 2, 3, 2);
             exitButton.Name = "exitButton";
@@ -76,33 +89,39 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.Transparent;
             panel1.Controls.Add(contactButton);
             panel1.Controls.Add(exitButton);
             panel1.Controls.Add(button1);
-            panel1.Location = new Point(268, 143);
+            panel1.Location = new Point(320, 134);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(88, 117);
             panel1.TabIndex = 3;
+            panel1.Paint += panel1_Paint;
             // 
             // panel2
             // 
+            panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(button7);
             panel2.Controls.Add(chessButton);
             panel2.Controls.Add(button5);
             panel2.Controls.Add(xoxButton);
-            panel2.Location = new Point(134, 38);
+            panel2.Location = new Point(142, 122);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(425, 249);
+            panel2.Size = new Size(432, 129);
             panel2.TabIndex = 4;
             // 
             // button7
             // 
-            button7.Location = new Point(228, 136);
+            button7.Cursor = Cursors.Hand;
+            button7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button7.ForeColor = Color.Fuchsia;
+            button7.Location = new Point(228, 79);
             button7.Margin = new Padding(3, 2, 3, 2);
             button7.Name = "button7";
-            button7.Size = new Size(161, 56);
+            button7.Size = new Size(170, 34);
             button7.TabIndex = 3;
             button7.Text = "Sudoku";
             button7.UseVisualStyleBackColor = true;
@@ -110,10 +129,13 @@
             // 
             // chessButton
             // 
-            chessButton.Location = new Point(45, 136);
+            chessButton.Cursor = Cursors.Hand;
+            chessButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chessButton.ForeColor = Color.Fuchsia;
+            chessButton.Location = new Point(37, 79);
             chessButton.Margin = new Padding(3, 2, 3, 2);
             chessButton.Name = "chessButton";
-            chessButton.Size = new Size(155, 56);
+            chessButton.Size = new Size(163, 34);
             chessButton.TabIndex = 2;
             chessButton.Text = "Chess";
             chessButton.UseVisualStyleBackColor = true;
@@ -121,10 +143,13 @@
             // 
             // button5
             // 
-            button5.Location = new Point(228, 46);
+            button5.Cursor = Cursors.Hand;
+            button5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.Fuchsia;
+            button5.Location = new Point(228, 20);
             button5.Margin = new Padding(3, 2, 3, 2);
             button5.Name = "button5";
-            button5.Size = new Size(161, 60);
+            button5.Size = new Size(170, 32);
             button5.TabIndex = 1;
             button5.Text = "ROCK-PAPER-SCISSORS";
             button5.UseVisualStyleBackColor = true;
@@ -132,22 +157,29 @@
             // 
             // xoxButton
             // 
-            xoxButton.Location = new Point(45, 46);
+            xoxButton.BackColor = Color.Transparent;
+            xoxButton.Cursor = Cursors.Hand;
+            xoxButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            xoxButton.ForeColor = Color.Fuchsia;
+            xoxButton.Location = new Point(37, 20);
             xoxButton.Margin = new Padding(3, 2, 3, 2);
             xoxButton.Name = "xoxButton";
-            xoxButton.Size = new Size(155, 60);
+            xoxButton.Size = new Size(163, 32);
             xoxButton.TabIndex = 0;
             xoxButton.Text = "X-O-X";
-            xoxButton.UseVisualStyleBackColor = true;
+            xoxButton.UseVisualStyleBackColor = false;
             xoxButton.Click += button4_Click;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Login;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(700, 338);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             Name = "Login";
             Text = "Banana Games";

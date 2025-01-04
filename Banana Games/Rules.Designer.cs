@@ -35,9 +35,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Rules;
-            pictureBox1.Location = new Point(-13, -20);
+            pictureBox1.Location = new Point(-21, -26);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(525, 416);
+            pictureBox1.Size = new Size(564, 452);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -45,7 +45,7 @@
             // 
             // Rules
             // 
-            ClientSize = new Size(502, 378);
+            ClientSize = new Size(519, 385);
             Controls.Add(pictureBox1);
             Name = "Rules";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
